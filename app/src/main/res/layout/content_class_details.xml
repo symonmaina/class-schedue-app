@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Unit Code -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit Code:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textUnitCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CSS 3253"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Class Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit Name:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textClassName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Advanced Java"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Lecturer -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lecturer:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textLecturer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dr. Wanjiku"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Day -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Day:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monday"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Time (Start-End Time) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="08:00 - 10:00"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Location -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Venue:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Engineering Complex Rm 204"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Reminder Preview Header -->
+        <TextView
+            android:id="@+id/reminderHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reminder Preview:"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:visibility="gone" />
+
+        <!-- Reminder Info -->
+        <TextView
+            android:id="@+id/textReminderDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_blue_bright"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Reminder Date Info -->
+        <TextView
+            android:id="@+id/textReminderDate"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_blue_bright"
+            android:visibility="gone"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Optional Edit Button -->
+        <Button
+            android:id="@+id/btnEditClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Class"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Class"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:textColor="@android:color/white" />
+
+        <!-- Reminder Button -->
+        <Button
+            android:id="@+id/btnSetReminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/black"
+            android:text="Set Reminder"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>

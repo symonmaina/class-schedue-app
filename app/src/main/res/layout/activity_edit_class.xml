@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <!-- Unit Code (Not Editable if it's the Primary Key) -->
+        <EditText
+            android:id="@+id/editUnitCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Unit Code (CSS 3253)"
+            android:enabled="false"
+            android:focusable="false"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Class Name -->
+        <EditText
+            android:id="@+id/editClassName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Class Name"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Lecturer Name -->
+        <EditText
+            android:id="@+id/editLecturer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lecturer Name"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Day Spinner -->
+        <Spinner
+            android:id="@+id/editDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Start Time -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Time:"
+            android:textStyle="bold" />
+
+        <!-- End Time -->
+
+        <TimePicker
+            android:id="@+id/editStartTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12dp"
+            android:timePickerMode="spinner" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Time:"
+            android:textStyle="bold" />
+
+        <TimePicker
+            android:id="@+id/editEndTime"
+            android:layout_width="241dp"
+            android:layout_height="178dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12dp"
+            android:timePickerMode="spinner" />
+
+        <!-- Location -->
+
+        <!-- Update Button -->
+
+        <EditText
+            android:id="@+id/editLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="Location" />
+
+        <Button
+            android:id="@+id/btnUpdateClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UpdateClass"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Optional: Delete Button -->
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Class"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>
